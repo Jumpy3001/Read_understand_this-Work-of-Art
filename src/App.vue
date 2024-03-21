@@ -2,10 +2,9 @@
   <v-app>
     <navigation :color="color" :flat="flat" />
     <v-main class="pt-0">
+      <PasswordPrompt @authenticated="authenticated = true"/>
       <home />
       <about />
-      <download />
-      <pricing />
       <contact />
     </v-main>
     <v-scale-transition>
@@ -44,6 +43,7 @@ import about from "./components/AboutSection";
 import download from "./components/DownloadSection";
 import pricing from "./components/PricingSection";
 import contact from "./components/ContactSection";
+import PasswordPrompt from "./components/PasswordPrompt"; // Adjust the path as necessary
 
 export default {
   name: "App",
@@ -56,12 +56,14 @@ export default {
     download,
     pricing,
     contact,
+    PasswordPrompt
   },
 
   data: () => ({
     fab: null,
     color: "",
     flat: null,
+    authenticated: false,
   }),
 
   created() {

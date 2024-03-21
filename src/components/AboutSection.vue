@@ -5,9 +5,9 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="7">
-              <h1 class="font-weight-light display-2">Sobre</h1>
+              <h1 class="font-weight-light display-2">Wild!</h1>
               <h1 class="font-weight-light display-1 mb-3">
-                Lorem ipsum dolor!
+                Warum unser Wild?
               </h1>
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
@@ -17,9 +17,7 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Genieße bei Rüegg Wild die delikate Vielfalt frischer Wildprodukte, die mit Sorgfalt und Leidenschaft zubereitet werden.
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -29,9 +27,7 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Unsere Produkte steht für Ethik, Verantwortung und die Verbindung zur Natur.
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -41,16 +37,14 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tauchen Sie ein in die Welt der Regionalität und erleben Sie authentische Geschmackserlebnisse und handgemachte Produkte aus unserer Heimat.
                   </p>
                 </v-col>
               </v-row>
             </v-col>
             <v-col cols="12" md="5" class="d-none d-md-flex">
               <v-img
-                src="@/assets/img/ill1.svg"
+                src="@/assets/img/forest.png"
                 class="d-block ml-auto mr-auto"
                 max-width="400px"
               />

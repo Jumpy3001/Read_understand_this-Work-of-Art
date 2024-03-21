@@ -5,16 +5,16 @@
       app
       temporary
       dark
-      src="@/assets/img/bgDrawer.jpg"
+      src="@/assets/img/bgDrawer.png"
     >
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+            <img style="height: auto !important" src="@/assets/img/logo.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">Rüegg</v-list-item-title>
+            <v-list-item-subtitle>Wild</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -45,7 +45,7 @@
       :color="color"
       :flat="flat"
       dark
-      class="px-15"
+      class="px-1"
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
@@ -62,16 +62,10 @@
           <span class="mr-2">Home</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Sobre</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Download</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Preços</span>
+          <span class="mr-2">Infos</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contate-nos</span>
+          <span class="mr-2">Kontakt</span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -96,10 +90,8 @@ export default {
     isXs: false,
     items: [
       ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
+      ["mdi-information-outline", "Infos", "#features"],
+      ["mdi-email-outline", "Kontakt", "#contact"],
     ],
   }),
   props: {

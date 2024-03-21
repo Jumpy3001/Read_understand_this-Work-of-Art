@@ -5,57 +5,23 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate-nos</h1>
+              <h1 class="font-weight-light display-1">Kontakt</h1>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                explicabo commodi quisquam asperiores dolore ad enim provident
-                veniam perferendis voluptate, perspiciatis.
+                Kontaktieren Sie uns noch heute, um mehr über unsere Produkte und Services zu erfahren oder um direkt über das Formular zu bestellen. Unser Team steht Ihnen gerne zur Verfügung und freut sich darauf, von Ihnen zu hören. Füllen Sie einfach das Formular aus und wir werden uns umgehend mit Ihnen in Verbindung setzen.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Wir danken Ihnen für Ihr Interesse und freuen uns darauf, Ihnen weiterhelfen zu können.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telefone: +xx (xx) xxxxx-xxxx
+                Telefon: +xx (xx) xxxxx-xxxx
               </h3>
               <h3 class="font-weight-light">
                 Email: email@email.com
               </h3>
             </v-col>
+
             <v-col cols="12" sm="7">
-              <v-form ref="form" v-model="valid" :lazy-validation="lazy">
-                <v-text-field
-                    v-model="name"
-                    :rules="nameRules"
-                    label="Nome"
-                    required
-                ></v-text-field>
-
-                <v-text-field
-                    v-model="email"
-                    :rules="emailRules"
-                    label="E-mail"
-                    required
-                ></v-text-field>
-
-                <v-textarea
-                    v-model="textArea"
-                    :rules="textAreaRules"
-                    label="Mensagem"
-                    required
-                />
-
-                <v-btn
-                    :disabled="!valid"
-                    color="primary"
-                    :dark="valid"
-                    rounded
-                    block
-                    class="mt-3"
-                    @click="submit"
-                >
-                  Enviar
-                </v-btn>
-              </v-form>
+              <div id="hubspotForm" v-once></div>
             </v-col>
           </v-row>
         </v-col>
@@ -131,6 +97,20 @@ export default {
       color: ''
     }
   }),
+  mounted() {
+    const script = document.createElement("script");
+    script.src="https://js.hsforms.net/forms/v2.js";
+    document.body.appendChild(script);
+    script.addEventListener("load", () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "143611969",
+          formId: "21cada4e-242c-47cb-b1dc-4f7214fcb402",
+          target: "#hubspotForm"
+        })
+      }
+    })
+  },
   methods: {
     submit() {
       /*db.collection("contactData").add({
