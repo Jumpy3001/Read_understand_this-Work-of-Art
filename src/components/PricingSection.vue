@@ -3,30 +3,32 @@
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="10">
-          <v-card style="width: 100%">
-            <h1 class="text-center pt-6 font-weight-light display-2">Werbung:B-Bot</h1>
+          <v-card style="width: 100%; padding:15px;">
+            <h1 class="text-center pt-6 font-weight-light display-2">Werbung: B-Bot</h1>
+            <v-btn rounded outlined style="width: 100%;" href="https://b-bot.ch" target="_blank" large color="white" class="mt-4">
+                <v-icon class="mr-2" >
+                  mdi-web
+                </v-icon>
+                Zu B-Bot
+            </v-btn>
             <v-divider class="my-6"></v-divider>
+            
             <v-row class="text-center">
               <v-col class="col-12 col-sm-6 col-md-4">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
-                        <div class="circle2">
-                          <v-img src="~@/assets/img/paperplane.svg"></v-img>
-                        </div>
+                        <v-img src="//b-bot.ch/cdn/shop/files/preview_images/1.png?v=1704918176&width=1946"></v-img>
                       </div>
                     </div>
                     <div class="text--disabled text-uppercase text-h5 my-2">B-Bot Spark</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
+                    
                     <div class="text-uppercase blue--text"></div>
                     <v-divider class="my-2"/>
                     <div class="text-uppercase text-h4 mt-6 blue--text">CHF 20,00</div>
                     <v-btn
+                        href="https://b-bot.ch/products/b-bot-quantum-leap"
                         v-bind="size"
                         rounded
                         outlined
@@ -45,21 +47,16 @@
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
-                        <div class="circle2">
-                          <v-img src="~@/assets/img/airplane.svg"/>
+                          <v-img src="//b-bot.ch/cdn/shop/files/preview_images/2.png?v=1704917899&width=1946"/>
                         </div>
-                      </div>
                     </div>
                     <div class="text--disabled text-uppercase text-h5 my-2">B-Bot Growth</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
+                    
                     <div class="text-uppercase blue--text"></div>
                     <v-divider class="my-2"/>
                     <div class="text-uppercase text-h4 mt-6 blue--text">CHF 50,00</div>
                     <v-btn
+                        href="https://b-bot.ch/products/b-bot-pulsar-star"
                         v-bind="size"
                         rounded
                         outlined
@@ -80,21 +77,16 @@
                   <v-card-text>
                     <div class="flex-center">
                       <div class="circle1">
-                        <div class="circle2">
-                          <v-img src="~@/assets/img/aeroplane.svg"/>
-                        </div>
+                        <v-img src="//b-bot.ch/cdn/shop/files/preview_images/3.png?v=1704918160&width=1946"/>
                       </div>
                     </div>
                     <div class="text--disabled text-uppercase text-h5 my-2">B-Bot Infinite</div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
-                    <div class="text-uppercase blue--text"></div>
-                    <v-divider class="my-2"/>
+                    
                     <div class="text-uppercase blue--text"></div>
                     <v-divider class="my-2"/>
                     <div class="text-uppercase text-h4 mt-6 blue--text">CHF 75,00</div>
                     <v-btn
+                        href="https://b-bot.ch/products/b-bot-nebula-nexus"
                         v-bind="size"
                         rounded
                         outlined
@@ -178,7 +170,7 @@ ul {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-color: #f0f8ff;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -12,7 +12,7 @@
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon1.svg"
+                    src="@/assets/img/icon2.png"
                     max-width="60px"
                     class="mr-4"
                   />
@@ -24,7 +24,7 @@
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon2.svg"
+                    src="@/assets/img/icon1.png"
                     max-width="60px"
                     class="mr-4"
                   />
@@ -34,7 +34,7 @@
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
                   <v-img
-                    src="@/assets/img/icon3.svg"
+                    src="@/assets/img/icon3.png"
                     max-width="60px"
                     class="mr-4"
                   />
@@ -47,7 +47,7 @@
             </v-col>
             <v-col cols="12" md="5" class="d-none d-md-flex">
               <v-img
-                src="@/assets/img/forest.png"
+                src="@/assets/img/Welt.webp"
                 class="d-block ml-auto mr-auto"
                 max-width="400px"
               />
