@@ -2,17 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import VueYouTubeEmbed from 'vue-youtube-embed'
-// import firebase from 'firebase/app'
-// import 'firebase/firestore'
+import { ModelObj } from 'vue-3d-model'; // Importieren des ModelObj aus dem 'vue-3d-model'-Paket
 
 Vue.use(VueYouTubeEmbed)
+Vue.use(ModelObj); // Verwenden Sie das 'ModelObj' aus dem 'vue-3d-model'-Paket
 Vue.config.productionTip = false
-
-// firebase.initializeApp({
-//  Configurações do seu app
-// })
-
-// export const db = firebase.firestore()
 
 new Vue({
   vuetify,

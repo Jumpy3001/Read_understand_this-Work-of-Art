@@ -5,11 +5,9 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Rüegg Wild</h1>
+              <h1 class="display-2 font-weight-bold mb-4">Die 7 Weltwunder</h1>
               <h1 class="font-weight-light">
-                Entdecke die Welt erstklassiger Schweizer Delikatessen bei Rüegg Wild – <br />
-                wo Qualität und Tradition auf exquisiten Geschmack treffen. <br />
-                Tauche ein in ein kulinarisches Erlebnis <br /> voller Frische und Genuss.
+              Jeder hat bestimmt schon mal von den 7 Weltwundern gehört. Unmenschlich gross ,beeindruckend und einfach undenkbar ,dass Menschen es gebaut haben. Doch sehr wahrscheinlich kennt man nicht alle 7 Weltwunder ,daher diese Website :).
               </h1>
               <v-btn
                 rounded
@@ -56,7 +54,7 @@
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
                   <h1 class="font-weight-regular">{{ feature.title }}</h1>
-                  <h4 class="font-weight-regular subtitle-1">
+                  <h4 class="big-count">
                     {{ feature.text }}
                   </h4>
                 </v-card>
@@ -81,18 +79,18 @@ export default {
       features: [
         {
           img: require("@/assets/img/icon2.png"),
-          title: "Frisches wild",
-          text: "delikate Vielfalt frischer Wildprodukte",
+          title: "Felsenstadt Petra in Jordanien",
+          text: "1",
         },
         {
           img: require("@/assets/img/icon1.png"),
-          title: "Schweizer Jagd",
-          text: "Gleichgewicht und nachhaltige Nutzung",
+          title: "Mausoleum Taj Mahal in Indien ",
+          text: "2",
         },
         {
           img: require("@/assets/img/icon3.png"),
-          title: "Regional",
-          text: "Handwerkskunst in unserer Region",
+          title: "Die Chinesische Mauer",
+          text: "3",
         },
       ],
     };
@@ -238,5 +236,8 @@ export default {
 <style>
 section {
   position: relative;
+}
+.big-count{
+  font-size: 3rem !important;
 }
 </style>

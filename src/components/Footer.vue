@@ -15,13 +15,13 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Erleben Sie die Faszination der Wildnis
+        B-Bot machts möglich.
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Beyond Experience</strong>
+        {{ new Date().getFullYear() }} — <strong>Weltwunder</strong>
       </v-card-text>
     </v-card>
   </v-footer>
